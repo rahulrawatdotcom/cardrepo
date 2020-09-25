@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.checkout-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(225, 225, 225, 0.35);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+input[type="text"]{
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+
+    text-align: center;
+}
+
+.card-grp{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:850px ){
+    .card-grp{
+        flex-direction: column;
+    }
+    .card-grp.input{
+        width: 48%;
+        margin: 0;
+    }
+}
