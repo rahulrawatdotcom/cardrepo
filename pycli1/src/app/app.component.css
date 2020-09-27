@@ -29,7 +29,7 @@ input[type="text"]{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width:850px ){
+@media screen and (max-width:525px ){
     .card-grp{
         flex-direction: column;
     }
