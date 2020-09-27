@@ -1,11 +1,12 @@
 <div class="checkout-form">
   <div class="card-grp">
-  <h5>Card Number*</h5>
-  <input type="text" id="first" size="4" onkeyup="movetoNext(this, 'second')" maxlength="4" minlength="0"/>
-  <input type="text" id="second" size="4" onkeyup="movetoNext(this, 'third')" maxlength="4" minlength="0"onkeyup="movetoprevious(this, 'first')"/>
-  <input type="text" id="third" size="4" onkeyup="movetoNext(this, 'forth')" maxlength="4" minlength="0" onkeyup="movetoprevious(this, 'second')"/>
-  <input type="text" id="forth" size="4" maxlength="4"  minlength="0" onkeyup="movetoprevious(this, 'third')"/>
+  <h2>Card Number*</h2>
+  <input type="text" id="first" size="4" moveNextByMaxLength (keyup)="keytab($event)" maxlength="4" minlength="0"/>
+  <input type="text" id="second" size="4" moveNextByMaxLength (keyup)="keytab($event)" maxlength="4" minlength="0"/>
+  <input type="text" id="third" size="4"moveNextByMaxLength (keyup)="keytab($event)" maxlength="4" minlength="0" />
+  <input type="text" id="forth" size="4" maxlength="4"  minlength="0" />
 
   </div>
 
   </div>
+
